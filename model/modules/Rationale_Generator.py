@@ -1,11 +1,11 @@
 import torch
 import torch.nn as nn
-from Transparency.model.modelUtils import isTrue
+from model.modelUtils import isTrue
 from allennlp.common import Registrable
 from allennlp.nn.activations import Activation
 from torch.nn import LSTMCell
 from collections import namedtuple
-from Transparency.model.modelUtils import isTrue, BatchHolder, BatchMultiHolder
+from model.modelUtils import isTrue, BatchHolder, BatchMultiHolder
 
 from allennlp.common.from_params import FromParams
 from typing import Dict

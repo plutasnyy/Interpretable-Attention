@@ -19,9 +19,9 @@ from .modelUtils import isTrue, get_sorting_index_with_noise_from_lengths
 from .modelUtils import BatchHolder, BatchMultiHolder
 from torch.distributions.bernoulli import Bernoulli
 
-from Transparency.model.modules.Decoder import AttnDecoderQA
-from Transparency.model.modules.Encoder import Encoder
-from Transparency.model.modules.Rationale_Generator import RGenerator_QA
+from model.modules.Decoder import AttnDecoderQA
+from model.modules.Encoder import Encoder
+from model.modules.Rationale_Generator import RGenerator_QA
 
 from .modelUtils import jsd as js_divergence
 import nltk

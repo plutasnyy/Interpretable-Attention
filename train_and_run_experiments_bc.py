@@ -10,8 +10,8 @@ args, extras = parser.parse_known_args()
 args.extras = extras
 args.attention = 'tanh'
 
-from Transparency.Trainers.DatasetBC import *
-from Transparency.ExperimentsBC import *
+from Trainers.DatasetBC import *
+from ExperimentsBC import *
 
 dataset = datasets[args.dataset](args)
 

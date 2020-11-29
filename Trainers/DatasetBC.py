@@ -1,5 +1,5 @@
-from Transparency.common_code.common import *
-import Transparency.preprocess.vectorizer
+from common_code.common import *
+import preprocess.vectorizer
 
 def sortbylength(X, y) :
     len_t = np.argsort([len(x) for x in X])

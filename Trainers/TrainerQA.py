@@ -1,6 +1,6 @@
-from Transparency.common_code.common import *
-from Transparency.common_code.metrics import *
-import Transparency.model.Question_Answering as QA
+from common_code.common import *
+from common_code.metrics import *
+import model.Question_Answering as QA
 
 
 class Trainer() :

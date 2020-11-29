@@ -1,4 +1,4 @@
-from Transparency.common_code.common import *
+from common_code.common import *
 
 import matplotlib as mpl
 import matplotlib.gridspec as gridspec

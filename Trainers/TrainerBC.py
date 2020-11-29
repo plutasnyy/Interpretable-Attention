@@ -1,6 +1,6 @@
-from Transparency.common_code.common import *
-from Transparency.common_code.metrics import *
-import Transparency.model.Binary_Classification as BC
+from common_code.common import *
+from common_code.metrics import *
+import model.Binary_Classification as BC
 import numpy as np
 
 metrics_type = {

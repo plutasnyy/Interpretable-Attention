@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from allennlp.common import Registrable
-from Transparency.model.modelUtils import jsd, isTrue
+from model.modelUtils import jsd, isTrue
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 import numpy as np

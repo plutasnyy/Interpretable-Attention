@@ -1,6 +1,6 @@
-from Transparency.common_code.common import *
-from Transparency.common_code.plotting import *
-from Transparency.common_code.kendall_top_k import kendall_top_k
+from common_code.common import *
+from common_code.plotting import *
+from common_code.kendall_top_k import kendall_top_k
 from scipy.stats import kendalltau, pearsonr, spearmanr
 from functools import partial
 import matplotlib.pyplot as plt

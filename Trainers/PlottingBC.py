@@ -1,6 +1,6 @@
 from scipy.stats import pearsonr, spearmanr
-from Transparency.common_code.common import *
-from Transparency.common_code.plotting import *
+from common_code.common import *
+from common_code.plotting import *
 from functools import partial
 import matplotlib.pyplot as plt
 from matplotlib import cm

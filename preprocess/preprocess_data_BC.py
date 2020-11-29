@@ -10,7 +10,7 @@ parser.add_argument('--min_df', type=int, required=True)
 args, extras = parser.parse_known_args()
 args.extras = extras
 
-from Transparency.preprocess import vectorizer
+from preprocess import vectorizer
 
 vec = vectorizer.Vectorizer(min_df=args.min_df)
 

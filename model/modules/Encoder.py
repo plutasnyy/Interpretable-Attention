@@ -1,12 +1,12 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from Transparency.model.modelUtils import isTrue
+from model.modelUtils import isTrue
 from allennlp.common import Registrable
 from allennlp.nn.activations import Activation
-from Transparency.model.modules.lstm import LSTM
+from model.modules.lstm import LSTM
 from torch.nn import LSTMCell
-from Transparency.model.modules.ortholstm import OrthoLSTM
+from model.modules.ortholstm import OrthoLSTM
 from collections import namedtuple
 
 LSTMState = namedtuple('LSTMState', ['hx', 'cx'])

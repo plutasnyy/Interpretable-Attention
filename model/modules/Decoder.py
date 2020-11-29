@@ -4,8 +4,8 @@ import torch.nn as nn
 from typing import Dict
 from allennlp.common import Params
 
-from Transparency.model.modules.Attention import Attention, masked_softmax
-from Transparency.model.modelUtils import isTrue, BatchHolder, BatchMultiHolder
+from model.modules.Attention import Attention, masked_softmax
+from model.modelUtils import isTrue, BatchHolder, BatchMultiHolder
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 

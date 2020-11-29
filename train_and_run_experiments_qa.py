@@ -11,8 +11,8 @@ parser.add_argument("--diversity",type=float,default=0)
 args, extras = parser.parse_known_args()
 args.extras = extras
 
-from Transparency.Trainers.DatasetQA import *
-from Transparency.ExperimentsQA import *
+from Trainers.DatasetQA import *
+from ExperimentsQA import *
 
 dataset = datasets[args.dataset](args)
 args.attention='tanh'

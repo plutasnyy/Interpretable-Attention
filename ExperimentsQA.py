@@ -1,7 +1,7 @@
-from Transparency.common_code.common import *
-from Transparency.Trainers.PlottingQA import generate_graphs
-from Transparency.configurations import configurations_qa
-from Transparency.Trainers.TrainerQA import Trainer, Evaluator
+from common_code.common import *
+from Trainers.PlottingQA import generate_graphs
+from configurations import configurations_qa
+from Trainers.TrainerQA import Trainer, Evaluator
 
 
 def train_dataset(dataset, config):

@@ -1,5 +1,5 @@
-from Transparency.common_code.common import *
-import Transparency.preprocess.vectorizer
+from common_code.common import *
+import preprocess.vectorizer
 
 class DataHolder() :
     def __init__(self, **kwargs) :

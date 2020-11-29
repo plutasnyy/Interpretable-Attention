@@ -1,7 +1,7 @@
-from Transparency.common_code.common import *
-from Transparency.Trainers.PlottingBC import generate_graphs
-from Transparency.configurations import configurations
-from Transparency.Trainers.TrainerBC import Trainer, Evaluator, RationaleTrainer
+from common_code.common import *
+from Trainers.PlottingBC import generate_graphs
+from configurations import configurations
+from Trainers.TrainerBC import Trainer, Evaluator, RationaleTrainer
 
 def train_dataset(dataset, config='lstm') :
 

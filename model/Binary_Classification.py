@@ -19,14 +19,14 @@ from scipy.special import softmax
 from scipy.special import expit as sigmoid
 from tensorboardX import SummaryWriter
 
-from Transparency.model.modules.Decoder import AttnDecoder
-from Transparency.model.modules.Encoder import Encoder
-from Transparency.model.modules.Attention import masked_softmax
-from Transparency.model.modules.Rationale_Generator import RGenerator
-from Transparency.common_code.metrics import calc_metrics_classification, calc_metrics_multilabel
+from model.modules.Decoder import AttnDecoder
+from model.modules.Encoder import Encoder
+from model.modules.Attention import masked_softmax
+from model.modules.Rationale_Generator import RGenerator
+from common_code.metrics import calc_metrics_classification, calc_metrics_multilabel
 from sklearn.metrics import accuracy_score
-from Transparency.common_code.common import pload1
-from Transparency.Trainers.PlottingBC import process_grads, process_int_grads
+from common_code.common import pload1
+from Trainers.PlottingBC import process_grads, process_int_grads
 import copy
 
 from .modelUtils import BatchHolder, get_sorting_index_with_noise_from_lengths

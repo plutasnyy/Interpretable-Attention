@@ -1,5 +1,5 @@
 import os
-from Transparency.common_code.common import *
+from common_code.common import *
 
 def generate_basic_config(dataset, exp_name) :
     config = {
