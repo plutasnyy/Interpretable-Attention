@@ -59,7 +59,7 @@ class Dataset() :
 
         X, y = filterbylength(X, y, min_length=min_length, max_length=max_length)
         Xt, yt = filterbylength(Xt, yt, min_length=min_length, max_length=max_length)
-        Xt, yt = sortbylength(Xt, yt)
+        # Xt, yt = sortbylength(Xt, yt)
         
         Xd, yd = filterbylength(Xd, yd, min_length=min_length, max_length=max_length)
         Xd, yd = sortbylength(Xd, yd)

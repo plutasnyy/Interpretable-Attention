@@ -143,7 +143,7 @@ class Evaluator() :
         test_data.attn_hat = attentions
 
         test_output = {'X': test_data.X,'y': test_data.y, 'yt_hat':test_data.yt_hat, 'attn_hat': test_data.attn_hat}
-        pdump(self.model, test_output, 'test_output')
+        # pdump(self.model, test_output, 'test_output')
 
         return predictions, attentions
 

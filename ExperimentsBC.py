@@ -19,9 +19,9 @@ def train_dataset(dataset, config='lstm') :
 
 def train_dataset_on_encoders(dataset, encoders) :
     for e in encoders :
-        train_dataset(dataset, e)
+        # train_dataset(dataset, e)
         run_experiments_on_latest_model(dataset, e)
-        run_rationale_on_latest_model(dataset, e)
+        # run_rationale_on_latest_model(dataset, e)
         
 def generate_graphs_on_encoders(dataset, encoders) :
     for e in encoders :
@@ -46,13 +46,13 @@ def run_evaluator_on_latest_model(dataset, config='lstm') :
 
 def run_experiments_on_latest_model(dataset, config='lstm', force_run=True) :
         evaluator = run_evaluator_on_latest_model(dataset, config)
-        test_data = dataset.test_data
-        evaluator.gradient_experiment(test_data, force_run=force_run)
-        evaluator.quantitative_analysis_experiment(test_data, dataset, force_run=force_run)
-        evaluator.importance_ranking_experiment(test_data, force_run=force_run)
-        evaluator.conicity_analysis_experiment(test_data)
-        evaluator.permutation_experiment(test_data, force_run=force_run)
-        evaluator.integrated_gradient_experiment(dataset, force_run=force_run)
+        # test_data = dataset.test_data
+        # evaluator.gradient_experiment(test_data, force_run=force_run)
+        # evaluator.quantitative_analysis_experiment(test_data, dataset, force_run=force_run)
+        # evaluator.importance_ranking_experiment(test_data, force_run=force_run)
+        # evaluator.conicity_analysis_experiment(test_data)
+        # evaluator.permutation_experiment(test_data, force_run=force_run)
+        # evaluator.integrated_gradient_experiment(dataset, force_run=force_run)
 
 def generate_graphs_on_latest_model(dataset, config='lstm'):
 
