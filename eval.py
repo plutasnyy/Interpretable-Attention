@@ -1,21 +1,20 @@
-from ast import literal_eval
+import csv
 
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from calculate_threshold import preds_to_spans, f1
+from calculate_threshold import preds_to_spans
 from predict_last_model import OrthoModel
 
-trial = pd.read_csv("../../data/spans/tsd_trial.csv")
-trial["spans"] = trial.spans.apply(literal_eval)
-data = list()
+trial = pd.read_csv("../../data/spans/tsd_test.csv")
+trial = trial.assign(spans=pd.Series(np.zeros(len(trial))).values)
 
 model = OrthoModel()
 for i, row in tqdm(trial.iterrows(), total=len(trial)):
     preds = model.predict(row['text'])
     predicted_spans = preds_to_spans(preds, threshold=0.5, cumulative=True)
-    score = f1(predicted_spans, row['spans'])
-    data.append(score)
+    trial.loc[i, 'spans'] = str(predicted_spans)
 
-print(np.mean(np.array(data)))
+trial = trial.drop(columns=['text'])
+trial.to_csv('spans-pred.txt', header=False, sep='\t', quoting=csv.QUOTE_NONE, escapechar='\n')
